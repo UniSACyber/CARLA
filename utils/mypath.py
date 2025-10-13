@@ -9,23 +9,23 @@ class MyPath(object):
         assert(database in db_names)
 
         if database == 'msl' or database == 'smap':
-            return '/home/zahraz/hz18_scratch/zahraz/datasets/MSL_SMAP'
+            return os.path.join(os.getcwd(), 'datasets/MSL_SMAP')
         elif database == 'ucr':
-            return '/home/zahraz/hz18_scratch/zahraz/datasets/UCR'
+            return os.path.join(os.getcwd(), 'datasets/UCR')
         elif database == 'yahoo':
-            return '/home/zahraz/hz18_scratch/zahraz/datasets/Yahoo'
+            return os.path.join(os.getcwd(), 'datasets/Yahoo')
         elif database == 'smd':
-            return '/home/zahraz/hz18_scratch/zahraz/datasets/SMD'
+            return os.path.join(os.getcwd(), 'datasets/SMD')
         elif database == 'swat':
-            return '/home/zahraz/hz18_scratch/zahraz/datasets/SWAT'
+            return os.path.join(os.getcwd(), 'datasets/SWAT')
         elif database == 'wadi':
-            return '/home/zahraz/hz18_scratch/zahraz/datasets/WADI'
+            return os.path.join(os.getcwd(), 'datasets/WADI')
         elif database == 'kpi':
-            return '/home/zahraz/hz18_scratch/zahraz/datasets/KPI'
+            return os.path.join(os.getcwd(), 'datasets/KPI')
         elif database == 'swan':
-            return '/home/zahraz/hz18_scratch/zahraz/datasets/Swan'
+            return os.path.join(os.getcwd(), 'datasets/Swan')
         elif database == 'gecco':
-            return '/home/zahraz/hz18_scratch/zahraz/datasets/GECCO'
+            return os.path.join(os.getcwd(), 'datasets/GECCO')
         
         else:
             raise NotImplementedError
