@@ -1,0 +1,5 @@
+datasets/*
+*.pyc
+*.npy
+*.pth
+*.tar
