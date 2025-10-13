@@ -1,12 +1,20 @@
-arch==5.3.1
-faiss-cpu==1.8.0
-matplotlib==3.5.3
-numpy==1.22.4
-pandas==2.2.2
-scikit-learn==1.4.2
-scipy==1.13.1
-seaborn==0.13.0
-torch==1.13.0
-torchaudio==0.13.0
-torchmetrics==1.0.1
-torchvision==0.14.0
+# PyTorch 2.x NOT compatible: pip3 install torch torchvision torchmetrics --index-url https://download.pytorch.org/whl/cu128
+# PyTorch 1.13.1, either use this: pip install python==3.10 torch==1.13.1+cu117 torchvision==0.14.1+cu117 torchmetrics --extra-index-url https://download.pytorch.org/whl/cu117
+# PyTorch 1.13.1, or this: conda install python=3.10 pytorch==1.13.1 torchvision==0.14.1 torchmetrics pytorch-cuda=11.7 -c pytorch -c nvidia
+
+arch #==5.3.1
+faiss-cpu #==1.8.0
+matplotlib #==3.5.3
+numpy==1.26.4 #==1.22.4
+pandas #==2.2.2
+scikit-learn #==1.4.2
+scipy #==1.13.1
+seaborn #==0.13.0
+pyyaml
+easydict
+termcolor
+
+# torch==1.13.0
+# torchaudio==0.13.0
+# torchmetrics #==1.0.1
+# torchvision==0.14.0
