@@ -5,15 +5,15 @@ setup: pretext
 backbone: resnet_ts
 model_kwargs:
    head: mlp
-   features_dim: 4
+   features_dim: 4 # Size of random subset
 res_kwargs:
-  in_channels: 55
+  in_channels: 10
   mid_channels: 4
 
 # Dataset
 train_db_name: s3id
 val_db_name: s3id
-num_classes: 10
+num_classes: 10 # Hyperparameter
 
 # Loss
 criterion: pretext
