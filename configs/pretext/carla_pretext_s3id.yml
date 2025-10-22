@@ -11,8 +11,8 @@ res_kwargs:
   mid_channels: 4
 
 # Dataset
-train_db_name: S3ID
-val_db_name: S3ID
+train_db_name: s3id
+val_db_name: s3id
 num_classes: 10
 
 # Loss
