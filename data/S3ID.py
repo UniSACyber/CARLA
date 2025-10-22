@@ -7,6 +7,9 @@ from torch.utils.data import Dataset
 from utils.mypath import MyPath
 import ast
 from sklearn.preprocessing import MinMaxScaler, StandardScaler
+import torch
+
+device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 
 class S3ID(Dataset):
@@ -33,7 +36,7 @@ class S3ID(Dataset):
         self.data = []
         self.targets = []
         labels = []
-        wsz, stride = 200, 10
+        wsz, stride = 200, 1
 
         if self.train:
             fname += '_train.csv'
