@@ -80,14 +80,24 @@ To train and evaluate the model, use the following commands (Example: MSL datase
 
 #### To run the pretext stage:
 
-```bash
-carla_pretext.py --config_env configs/env.yml --config_exp configs/pretext/carla_pretext_msl.yml --fname M-6
+```
+python carla_pretext.py --config_env configs/env.yml --config_exp configs/pretext/carla_pretext_msl.yml --fname M-6
+```
+
+For S3ID:
+```
+python carla_pretext.py --config_env configs/env.yml --config_exp configs/pretext/carla_pretext_s3id.yml --fname S3ID
 ```
 
 #### To run the self-supervised classification stage:
 
-```bash
-carla_classification.py --config_env configs/env.yml --config_exp configs/classification/carla_classification_msl.yml --fname M-6
+```
+python carla_classification.py --config_env configs/env.yml --config_exp configs/classification/carla_classification_msl.yml --fname M-6
+```
+
+For S3ID:
+```
+python carla_classification.py --config_env configs/env.yml --config_exp configs/classification/carla_classification_s3id.yml --fname S3ID
 ```
 
 You can modify the `carla_pretext_msl.yml` and `carla_classification_msl.yml` files to adjust the model parameters, dataset paths, and other settings.
